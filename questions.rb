@@ -1,6 +1,8 @@
 # keep only the elements that start with an a
-def select_elements_starting_with_a(array)
+def select_elements_starting_with_a(n)
+	n.select{ |n| n.start_with?("a") }
 end
+#changed array to 'n' and then tested in IRB. Passed n into the method to use .select and then start_with?
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
