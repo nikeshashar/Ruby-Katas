@@ -5,8 +5,10 @@ end
 #changed array to 'n' and then tested in IRB. Passed n into the method to use .select and then start_with?
 
 # keep only the elements that start with a vowel
-def select_elements_starting_with_vowel(array)
+def select_elements_starting_with_vowel(n)
+	n.select{ |n| n.match(/\A[aeiou]/) }
 end
+#changed array to 'n'. Used .match as start_with? does not accept regexp. 
 
 # remove instances of nil (but NOT false) from an array
 def remove_nils_from_array(array)
