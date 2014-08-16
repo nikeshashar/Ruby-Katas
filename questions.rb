@@ -12,7 +12,7 @@ end
 
 # remove instances of nil (but NOT false) from an array
 def remove_nils_from_array(n)
-	n.delete_if { |a| a == nil }
+	n.compact
 end
 
 # remove instances of nil AND false from an array
@@ -32,6 +32,7 @@ end
 # [['Bob', 'Clive'], ['Bob', 'Dave'], ['Clive', 'Dave']]
 # make sure you don't have the same pairing twice, 
 def every_possible_pairing_of_students(array)
+
 end
 
 # discard the first 3 elements of an array, 
