@@ -108,6 +108,7 @@ end
 
 # convert a symbol into a string
 def turn_symbol_into_string(symbol)
+	
 end
 
 # get the average from an array, rounded to the nearest integer
