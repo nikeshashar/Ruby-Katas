@@ -131,12 +131,12 @@ describe 'the Friday test :)' do
     expect(n).to eq({'b' => 'a', 'd' => 'c'})
   end
 
-  fspecify 'add_together_keys_and_values' do
+  specify 'add_together_keys_and_values' do
     n = add_together_keys_and_values({1 => 1, 2 => 2})
     expect(n).to eq 6
   end
 
-  specify 'remove_capital_letters_from_string' do
+  fspecify 'remove_capital_letters_from_string' do
     n = remove_capital_letters_from_string 'Hello JohnDoe'
     expect(n).to eq 'ello ohnoe'
   end
