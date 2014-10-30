@@ -1,9 +1,9 @@
 require 'rspec'
-require_relative './questions'
+require 'questions'
 
 RSpec.configure do |config|
   config.color = true
-  config.formatter = :documentation
+  # config.formatter = :documentation
 end
 
 describe 'the Friday test :)' do
@@ -161,17 +161,17 @@ describe 'the Friday test :)' do
     expect(n).to eq 'makersacademy'
   end
 
-  fspecify 'titleize_a_string' do
+  specify 'titleize_a_string' do
     n = titleize_a_string 'the lion the witch and the wardrobe'
     expect(n).to eq 'The Lion the Witch and the Wardrobe'
   end
 
-  specify 'check_a_string_for_special_characters' do
+  fspecify 'check_a_string_for_special_characters' do
     a = check_a_string_for_special_characters 'ABCdef123'
     b = check_a_string_for_special_characters 'ABC@def123!'
 
-    expect(a).to be_false
-    expect(b).to be_true
+    expect(a).to be_false 
+    expect(b).to be_true 
   end
 
   specify 'get_upper_limit_of' do
