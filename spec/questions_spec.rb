@@ -174,17 +174,17 @@ describe 'the Friday test :)' do
     expect(b).to be_truthy 
   end
 
-  fspecify 'get_upper_limit_of' do
+  specify 'get_upper_limit_of' do
     n = get_upper_limit_of 1..20
     expect(n).to eq 20
   end
 
-  specify 'is_a_3_dot_range?' do
+  fspecify 'is_a_3_dot_range?' do
     a = is_a_3_dot_range? 1..20
     b = is_a_3_dot_range? 1...20
 
-    expect(a).to be_false
-    expect(b).to be_true
+    expect(a).to be_falsey
+    expect(b).to be_truthy
   end
 
   specify 'square_root_of' do
