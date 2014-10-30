@@ -179,7 +179,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 20
   end
 
-  fspecify 'is_a_3_dot_range?' do
+  specify 'is_a_3_dot_range?' do
     a = is_a_3_dot_range? 1..20
     b = is_a_3_dot_range? 1...20
 
@@ -187,7 +187,7 @@ describe 'the Friday test :)' do
     expect(b).to be_truthy
   end
 
-  specify 'square_root_of' do
+  fspecify 'square_root_of' do
     a = square_root_of 9
     b = square_root_of 3
     expect(a).to eq 3.0
